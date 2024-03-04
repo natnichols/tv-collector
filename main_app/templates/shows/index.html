@@ -25,10 +25,18 @@
       <a href="{% url 'show-detail' show.id %}">
         <div class="card-content">
           <div class="card-img-container">
-            <img 
-              src="{% static 'images/astro-tv.svg' %}" 
-              alt="An astronaut coming out of a TV"
-            >
+            {% if show.photo.url %}
+              <img 
+                src="{{ show.photo.url }}" 
+                alt="A photo from {{ show.name }}"
+                class="usr-img"
+              >
+            {% else %}
+              <img 
+                src="{% static 'images/astro-tv.svg' %}" 
+                alt="An astronaut coming out of a TV"
+              >
+            {% endif %}
           </div>
           <h2 class="card-title">{{ show.name }}</h2>
           <p>{{ show.release_year }}</p>
