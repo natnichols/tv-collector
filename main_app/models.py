@@ -26,3 +26,6 @@ class Episode(models.Model):
 
   def __str__(self):
     return f"{self.name} (S{self.season}.E{self.episode_num}) watched on {self.date}"
+  
+  class Meta:
+    ordering = ['-date']
