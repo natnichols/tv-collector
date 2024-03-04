@@ -60,19 +60,25 @@
       <button type="submit" class="btn submit">Add Episode</button>
     </form>
     <h3>Watched Episodes</h3>
-    <table>
-      <thead>
-        <tr><th>Watch Date</th><th>Episode</th></tr>
-      </thead>
-      <tbody>
-        {% for episode in show.episode_set.all %}
-          <tr>
-            <td>{{ episode.date }}</td>
-            <td>S{{ episode.season }}.E{{ episode.episode_num }} - "{{ episode.name }}"</td>
-          </tr>
-        {% endfor %}
-      </tbody>
-    </table>
+    {% if show.episode_set.all.count %}
+      <table>
+        <thead>
+          <tr><th>Watch Date</th><th>Episode</th></tr>
+        </thead>
+        <tbody>
+          {% for episode in show.episode_set.all %}
+            <tr>
+              <td>{{ episode.date }}</td>
+              <td>S{{ episode.season }}.E{{ episode.episode_num }} - "{{ episode.name }}"</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% else %}
+      <div class="subsection-content">
+        <p>You haven't watched any episodes of {{ show.name }} yet!</p>
+      </div>
+    {% endif %}
   </section>
 </div>
 
