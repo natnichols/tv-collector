@@ -24,7 +24,7 @@
   margin-top: 20px;
 }
 
-.episodes-toy-container {
+.episodes-container {
   display: flex;
   flex-direction: column;
   padding-bottom: 20px;
@@ -94,7 +94,7 @@
   margin: 5px 0;
 }
 
-.episodes-toy-container > section {
+.episodes-container > section {
   width: 80%;
   min-width: 360px;
   border: var(--borders);
@@ -201,19 +201,19 @@
     margin-right: 25px;
   }
 
-  .episodes-toy-container {
+  .episodes-container {
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
   }
 
-  .episodes-toy-container > section {
+  .episodes-container > section {
     width: 45%;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  .episodes-toy-container {
+  .episodes-container {
     padding: 0 40px;
   }
 }

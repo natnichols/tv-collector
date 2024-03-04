@@ -29,5 +29,29 @@
     </div>
   </div>
 </section>
+<div class="episodes-container">
+  <section class="episodes">
+    <div class="subsection-title">
+      <h2>Episodes</h2>
+      <img 
+        src="{% static 'images/retro-tv-favi.png' %}"
+        alt="Temp My TV Collection Logo"
+      >
+    </div>
+    <table>
+      <thead>
+        <tr><th>Watch Date</th><th>Episode</th></tr>
+      </thead>
+      <tbody>
+        {% for episode in show.episode_set.all %}
+          <tr>
+            <td>{{ episode.watch_date }}</td>
+            <td>S{{ episode.season }}.E{{ episode.episode_num }} - "{{ episode.name }}"</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </section>
+</div>
 
 {% endblock %}
