@@ -18,7 +18,7 @@ class Show(models.Model):
 class Episode(models.Model):
   name = models.CharField(max_length=100)
   season = models.IntegerField()
-  episode_num = models.IntegerField()
+  episode_num = models.IntegerField('Episode Number')
   date = models.DateField('Watch Date')
   # air_date = models.DateField() # icebox feature
   # description = models.TextField(max_length=250) # icebox feature
