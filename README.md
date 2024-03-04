@@ -13,7 +13,8 @@
 <!--! add additional app screenshot? -->
 
 <!-- ## Attributions 🎉 -->
-<!-- * placeholder bullet for favicon -->
+<!-- * Favicon sourced from [Icons8](https://icons8.com/icon/VFsRvkbzMrQA/tv "Icons8") -->
+<!-- * Logo sourced from [Freepik.com](https://www.freepik.com/free-vector/vintage-tv_763025.htm#fromView=search&page=1&position=0&uuid=26ddc5e4-3a8c-47b8-ae89-3e621b55c8e1 "Freepik") -->
 <!-- * placeholder bullet -->
 
 <!-- ## Technologies used 🧰 -->
