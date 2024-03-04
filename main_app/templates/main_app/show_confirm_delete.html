@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="page-header">
+  <h1>Delete Show?</h1>
+  <img 
+    src="{% static 'images/retro-tv-favi.png' %}"
+    alt="Temp My TV Collection Logo"
+  >
+</div>
+<h2>Are you sure you want to delete {{ show.name }}?</h2>
+
+<form action="" method="post" class="form">
+  {% csrf_token %}
+  <a 
+    href="{% url 'show-detail' show.id %}"
+    class="btn secondary"
+  >
+    Cancel
+  </a>
+  <button type="submit" class="btn danger">Delete {{ show.name }}</button>
+</form>
+
+{% endblock %}
