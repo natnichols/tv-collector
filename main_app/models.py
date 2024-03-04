@@ -19,10 +19,10 @@ class Episode(models.Model):
   name = models.CharField(max_length=100)
   season = models.IntegerField()
   episode_num = models.IntegerField()
-  watch_date = models.DateField()
+  date = models.DateField('Watch Date')
   # air_date = models.DateField() # icebox feature
   # description = models.TextField(max_length=250) # icebox feature
   show = models.ForeignKey(Show, on_delete=models.CASCADE)
 
   def __str__(self):
-    return f"{self.name} (S{self.season}.E{self.episode_num}) watched on {self.watch_date}"
+    return f"{self.name} (S{self.season}.E{self.episode_num}) watched on {self.date}"

@@ -4,4 +4,4 @@ from .models import Episode
 class EpisodeForm(ModelForm):
   class Meta:
     model = Episode
-    fields = ['watch_date', 'season', 'episode_num', 'name']
+    fields = ['date', 'season', 'episode_num', 'name']
