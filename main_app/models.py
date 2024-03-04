@@ -25,4 +25,4 @@ class Episode(models.Model):
   show = models.ForeignKey(Show, on_delete=models.CASCADE)
 
   def __str__(self):
-    return f"{self.name} (S{self.season}E{self.episode_num}) watched on {self.date}"
+    return f"{self.name} (S{self.season}.E{self.episode_num}) watched on {self.watch_date}"
