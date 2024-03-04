@@ -22,18 +22,20 @@
 <section class="card-container">
   {% for show in shows %}
     <div class="card">
-      <div class="card-content">
-        <div class="card-img-container">
-          <img 
-            src="{% static 'images/sk8r-boi-cat.svg' %}" 
-            alt="A skater boy cat"
-          >
+      <a href="/shows/{{ show.id }}">
+        <div class="card-content">
+          <div class="card-img-container">
+            <img 
+              src="{% static 'images/astro-tv.svg' %}" 
+              alt="An astronaut coming out of a TV"
+            >
+          </div>
+          <h2 class="card-title">{{ show.name }}</h2>
+          <p>{{ show.release_year }}</p>
+          <p>{{ show.streamer }}</p>
+          <p>{{ show.description }}</p>
         </div>
-        <h2 class="card-title">{{ show.name }}</h2>
-        <p>{{ show.release_year }}</p>
-        <p>{{ show.streamer }}</p>
-        <p>{{ show.description }}</p>
-      </div>
+      </a>
     </div>
   {% endfor %}
 </section>
