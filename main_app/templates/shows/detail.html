@@ -50,6 +50,7 @@
     </div>
     <h3>Add an Episode 📼</h3>
     <form 
+      action="{% url 'add-episode' show.id %}"
       method="post"
       class="subsection-content"
       autocomplete="off"

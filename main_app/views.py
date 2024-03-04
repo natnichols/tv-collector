@@ -1,5 +1,5 @@
 # imports
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Show
 from .forms import EpisodeForm
@@ -21,6 +21,14 @@ def show_detail(request, show_id):
   return render(request, 'shows/detail.html', {
     'show': show, 'episode_form': episode_form
   })
+
+def add_episode(request, show_id):
+  form = EpisodeForm(request.POST)
+  if form.is_valid():
+    new_episode = form.save(commit=False)
+    new_episode.show_id = show_id
+    new_episode.save()
+  return redirect('show-detail', show_id=show_id)
 
 class ShowCreate(CreateView):
   model = Show
