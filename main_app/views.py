@@ -1,8 +1,13 @@
 # imports
 from django.shortcuts import render, redirect
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
-from .models import Show
+from .models import Show, Photo
 from .forms import EpisodeForm
+import uuid
+import boto3
+
+S3_BASE_URL = 'https://s3.us-east-1.amazonaws.com/'
+BUCKET = 'nn-tv-collector'
 
 # views
 def home(request):
@@ -28,6 +33,23 @@ def add_episode(request, show_id):
     new_episode = form.save(commit=False)
     new_episode.show_id = show_id
     new_episode.save()
+  return redirect('show-detail', show_id=show_id)
+
+def add_photo(request, show_id):
+  photo_file = request.FILES.get('photo-file', None)
+  if photo_file:
+    s3 = boto3.client('s3')
+    key = uuid.uuid4().hex + photo_file.name[photo_file.name.rfind('.'):]
+    try:
+      s3.upload_fileobj(photo_file, BUCKET, key)
+      url = f"{S3_BASE_URL}{BUCKET}/{key}"
+      photo = Photo(url=url, show_id=show_id)
+      show_photo = Photo.objects.filter(show_id=show_id)
+      if show_photo.first():
+        show_photo.first().delete()
+      photo.save()
+    except Exception as err:
+      print('An error occurred uploading file to S3: %s' % err)
   return redirect('show-detail', show_id=show_id)
 
 class ShowCreate(CreateView):

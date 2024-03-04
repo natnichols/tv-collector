@@ -23,10 +23,18 @@
 
 <section class="show-container">
   <div class="show-img">
-    <img 
-      src="{% static 'images/astro-tv.svg' %}" 
-      alt="An astronaut coming out of a TV"
-    >
+    {% if show.photo.url %}
+      <img 
+        src="{{ show.photo.url }}" 
+        alt="A photo from {{ show.name }}"
+        class="usr-img"
+      >
+    {% else %}
+      <img 
+        src="{% static 'images/astro-tv.svg' %}" 
+        alt="An astronaut coming out of a TV"
+      >
+    {% endif %}
   </div>
   <div class="show-details">
     <h1>{{ show.name }}</h1>
@@ -37,6 +45,20 @@
       <a href="{% url 'show-update' show.id %}" class="btn warn">Edit</a>
       <a href="{% url 'show-delete' show.id %}" class="btn danger">Delete</a>
     </div>
+    <h3>Change Photo for {{ show.name }}</h3>
+    <p class="file-name"></p>
+    <form 
+      action="{% url 'add-photo' show.id %}"
+      enctype="multipart/form-data" 
+      method="POST"
+    >
+      {% csrf_token %}
+      <label class="btn secondary">
+        Choose Photo
+        <input type="file" name="photo-file" id="file-input">
+      </label>
+      <button type="submit" class="btn submit">Upload Photo</button>
+    </form>
   </div>
 </section>
 <div class="episodes-container">
