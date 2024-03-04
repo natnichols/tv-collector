@@ -26,3 +26,6 @@ def home(request):
 
 def about(request):
   return render(request, 'about.html')
+
+def show_index(request):
+  return render(request, 'shows/index.html', { 'shows': shows })
