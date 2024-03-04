@@ -13,6 +13,7 @@
 <!--! add additional app screenshot? -->
 
 <!-- ## Attributions 🎉 -->
+<!-- * placeholder bullet for favicon -->
 <!-- * placeholder bullet -->
 
 <!-- ## Technologies used 🧰 -->
