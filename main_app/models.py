@@ -13,4 +13,4 @@ class Show(models.Model):
     return self.name
   
   def get_absolute_url(self):
-    return reverse('show-detail', kwargs={"show_id": self.id})
+    return reverse('show-detail', kwargs={'show_id': self.id})

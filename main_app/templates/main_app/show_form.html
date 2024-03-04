@@ -8,7 +8,11 @@
 {% block content %}
 
 <div class="page-header">
-  <h1>Add a Show</h1>
+  {% if show %}
+    <h1>Edit {{ show.name }}</h1>
+  {% else %}
+    <h1>Add a Show</h1>
+  {% endif %}
   <img 
     src="{% static 'images/retro-tv-favi.png' %}"
     alt="Temp My TV Collection Logo"
@@ -19,7 +23,11 @@
   <table>
     {{ form.as_table }}
   </table>
-  <button type="submit" class="btn submit">Add New Show! 🎞️✨</button>
+  {% if show %}
+    <button type="submit" class="btn submit">Update Show! 🎞️✨</button>
+  {% else %}
+    <button type="submit" class="btn submit">Add New Show! 🎞️✨</button>
+  {% endif %}
 </form>
 
 {% endblock %}

@@ -23,6 +23,10 @@
     <h2>{{ show.release_year }}</h2>
     <h2>{{ show.streamer }}</h2>
     <p>{{ show.description }}</p>
+    <div class="show-actions">
+      <a href="{% url 'show-update' show.id %}" class="btn warn">Edit</a>
+      <a href="{% url 'show-delete' show.id %}" class="btn danger">Delete</a>
+    </div>
   </div>
 </section>
 
