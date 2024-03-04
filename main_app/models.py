@@ -1,5 +1,6 @@
 # imports
 from django.db import models
+from django.urls import reverse
 
 # models
 class Show(models.Model):
@@ -10,3 +11,7 @@ class Show(models.Model):
 
   def __str__(self):
     return self.name
+  
+  def get_absolute_url(self):
+      return reverse('show-detail', kwargs={"show_id": self.id})
+  

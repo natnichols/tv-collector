@@ -21,4 +21,3 @@ def show_detail(request, show_id):
 class ShowCreate(CreateView):
   model = Show
   fields = '__all__'
-  success_url ='/shows/'
