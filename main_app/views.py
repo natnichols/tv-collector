@@ -2,6 +2,7 @@
 from django.shortcuts import render
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Show
+from .forms import EpisodeForm
 
 # views
 def home(request):
@@ -16,7 +17,10 @@ def show_index(request):
 
 def show_detail(request, show_id):
   show = Show.objects.get(id=show_id)
-  return render(request, 'shows/detail.html', { 'show': show })
+  episode_form = EpisodeForm()
+  return render(request, 'shows/detail.html', {
+    'show': show, 'episode_form': episode_form
+  })
 
 class ShowCreate(CreateView):
   model = Show

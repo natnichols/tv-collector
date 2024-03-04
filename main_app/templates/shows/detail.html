@@ -38,6 +38,17 @@
         alt="Temp My TV Collection Logo"
       >
     </div>
+    <h3>Add an Episode 📼</h3>
+    <form 
+      method="post"
+      class="subsection-content"
+      autocomplete="off"
+    >
+      {% csrf_token %}
+      {{ episode_form.as_p }}
+      <button type="submit" class="btn submit">Add Episode</button>
+    </form>
+    <h3>Watched Episodes</h3>
     <table>
       <thead>
         <tr><th>Watch Date</th><th>Episode</th></tr>
