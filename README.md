@@ -13,8 +13,9 @@
 <!--! add additional app screenshot? -->
 
 <!-- ## Attributions 🎉 -->
-<!-- * Favicon sourced from [Icons8](https://icons8.com/icon/VFsRvkbzMrQA/tv "Icons8") -->
-<!-- * Logo sourced from [Freepik.com](https://www.freepik.com/free-vector/vintage-tv_763025.htm#fromView=search&page=1&position=0&uuid=26ddc5e4-3a8c-47b8-ae89-3e621b55c8e1 "Freepik") -->
+<!-- * Favicon/Temp Logo sourced from [Icons8](https://icons8.com/icon/VFsRvkbzMrQA/tv "Icons8") -->
+<!-- * Other Logo sourced from [Freepik.com](https://www.freepik.com/free-vector/vintage-tv_763025.htm#fromView=search&page=1&position=0&uuid=26ddc5e4-3a8c-47b8-ae89-3e621b55c8e1 "Freepik") -->
+<!-- * Placeholder show image sourced from [Freepik.com](https://www.freepik.com/free-vector/cute-astronaut-out-tv-space-cartoon-vector-icon-illustration-science-technology-icon-isolated_31416665.htm#fromView=search&page=1&position=27&uuid=0cfa2f33-154b-4f23-b321-6ea6c30c99a6 "Image by catalyststuff on Freepik") -->
 <!-- * placeholder bullet -->
 
 <!-- ## Technologies used 🧰 -->
