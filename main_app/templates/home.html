@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+{% comment %} <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}"/> {% endcomment %}
+{% endblock %}
+
+{% block content %}
+
+<section class="logo-container">
+  <div class="tv-container">
+    <img 
+      src="{% static 'images/retro-tv-favi.png' %}"
+      alt="Temp My TV Collection Logo"
+    >
+  </div>
+  <h1>My TV Collection</h1>
+</section>
+
+{% endblock %}

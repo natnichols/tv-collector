@@ -1,8 +1,6 @@
 # imports
 from django.shortcuts import render
 
-from django.http import HttpResponse
-
 # temp data
 class Show:
   def __init__(self, name, release_year, streamer, description):
@@ -22,7 +20,7 @@ shows = [
 
 # views
 def home(request):
-  return HttpResponse('<h1>Hello ᓚᘏᗢ</h1>')
+  return render(request, 'home.html')
 
 def about(request):
   return render(request, 'about.html')
