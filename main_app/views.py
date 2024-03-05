@@ -1,6 +1,7 @@
 # imports
 from django.shortcuts import render, redirect
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
+from django.contrib.auth.views import LoginView
 from .models import Show, Photo
 from .forms import EpisodeForm
 import uuid
@@ -10,8 +11,6 @@ S3_BASE_URL = 'https://s3.us-east-1.amazonaws.com/'
 BUCKET = 'nn-tv-collector'
 
 # views
-def home(request):
-  return render(request, 'home.html')
 
 def about(request):
   return render(request, 'about.html')
@@ -51,6 +50,9 @@ def add_photo(request, show_id):
     except Exception as err:
       print('An error occurred uploading file to S3: %s' % err)
   return redirect('show-detail', show_id=show_id)
+
+class Home(LoginView):
+  template_name = 'home.html'
 
 class ShowCreate(CreateView):
   model = Show
