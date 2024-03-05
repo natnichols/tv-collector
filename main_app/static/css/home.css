@@ -24,11 +24,17 @@ main > section {
 }
 
 .logo-container h2 {
-  font-size: var(--font-xtreme);
+  font-size: 5rem;
+  color: white;
 }
 
 .tv-container {
+  display: flex;
   width: 80%;
+}
+.tv-container img {
+  height: 100%;
+  width: 100%;
 }
 
 .login {
