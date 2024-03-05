@@ -1,4 +1,4 @@
-# My TV Collection ![Favicon/Logo](/main_app/static/images/retro-tv-favi.png)
+# ![Favicon/Logo](/main_app/static/images/retro-tv-favi.png) My TV Collection 
 
 ### _Can't remember what episode you left off at on that show? Now all you have to remember is the popcorn_ 🍿
 
@@ -45,7 +45,7 @@ _My TV Collection_ is very simple - you can add TV shows to a Shows list, view d
 - [ ] Add Movies Model to track movies watched
 - [ ] Add Episode Detail template to show additional episode details
   - [ ] Add air_date and description fields to Episode Model
-- [ ] Add reviews functionality:
+- [ ] Add reviews functionality for:
   - [ ] Shows
   - [ ] Episodes
   - [ ] Movies
