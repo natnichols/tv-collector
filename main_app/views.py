@@ -4,6 +4,7 @@ from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.views import LoginView
 from .models import Show, Photo
 from .forms import EpisodeForm
@@ -74,7 +75,7 @@ def add_photo(request, show_id):
 class Home(LoginView):
   template_name = 'home.html'
 
-class ShowCreate(CreateView):
+class ShowCreate(LoginRequiredMixin, CreateView):
   model = Show
   fields = ['name', 'release_year', 'streamer', 'description']
   
@@ -82,10 +83,10 @@ class ShowCreate(CreateView):
     form.instance.user = self.request.user
     return super().form_valid(form)
 
-class ShowUpdate(UpdateView):
+class ShowUpdate(LoginRequiredMixin, UpdateView):
   model = Show
   fields = ['release_year', 'streamer', 'description']
 
-class ShowDelete(DeleteView):
+class ShowDelete(LoginRequiredMixin, DeleteView):
   model = Show
   success_url = '/shows/'
