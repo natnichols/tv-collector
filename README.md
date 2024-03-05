@@ -50,6 +50,5 @@ _My TV Collection_ is very simple - you can add TV shows to a Shows list, view d
   - [ ] Shows
   - [ ] Episodes
   - [ ] Movies
-- [ ] Add Auth functionality
 - [ ] Incorporate Movie or TV Show APIs
   - [ ] Use my personal X Files API
