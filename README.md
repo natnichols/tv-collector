@@ -1,6 +1,6 @@
 # ![Favicon/Logo](/main_app/static/images/retro-tv-favi.png) My TV Collection 
 
-### _Can't remember what episode you left off at on that show? Now all you have to remember is the popcorn_ 🍿
+### _Can't remember which episode you left off at in that show? Now all you have to remember is the popcorn_ 🍿
 
 _My TV Collection_ was inspired by my partner and I's love of television, and the joy that comes from watching TV together. We love experiencing new shows together and sharing our favorite shows with each other. That said, our list of Shows to Watch has only grown over time, and with our penchant for watching multiple shows at once, it can be hard to keep track of the last episode we saw for each different show. Enter _My TV Collection_!
 
