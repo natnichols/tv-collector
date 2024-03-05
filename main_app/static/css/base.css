@@ -266,7 +266,9 @@ nav li {
   .header-logo-container {
     /* visual fix to help align logo */
     display: flex;
+    justify-content: space-between;
     padding-top: 6px;
+    padding-bottom: 6px;
     width: 256px;
     height: 70px;
   }
