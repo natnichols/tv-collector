@@ -36,6 +36,7 @@ def show_index(request):
   shows = Show.objects.filter(user=request.user)
   return render(request, 'shows/index.html', { 'shows': shows })
 
+@login_required
 def show_detail(request, show_id):
   show = Show.objects.get(id=show_id)
   episode_form = EpisodeForm()
@@ -43,6 +44,7 @@ def show_detail(request, show_id):
     'show': show, 'episode_form': episode_form
   })
 
+@login_required
 def add_episode(request, show_id):
   form = EpisodeForm(request.POST)
   if form.is_valid():
@@ -51,6 +53,7 @@ def add_episode(request, show_id):
     new_episode.save()
   return redirect('show-detail', show_id=show_id)
 
+@login_required
 def add_photo(request, show_id):
   photo_file = request.FILES.get('photo-file', None)
   if photo_file:
