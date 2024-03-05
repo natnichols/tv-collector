@@ -4,6 +4,7 @@ main {
   justify-content: center;
   flex-wrap: wrap;
   height: 100%;
+  flex-direction: column;
 }
 
 main > section {
@@ -33,6 +34,7 @@ main > section {
   display: flex;
   width: 80%;
 }
+
 .tv-container img {
   height: 100%;
   width: 100%;
@@ -45,6 +47,7 @@ main > section {
   justify-content: center;
   align-items: center;
   width: 80%;
+  background-color: rgb(221, 218, 225, .75);
 }
 
 .login h1 {
