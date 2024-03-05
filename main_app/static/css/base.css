@@ -160,6 +160,7 @@ nav li {
 .page-header h1 {
   font-size: var(--font-xxl);
   margin: 0;
+  color: rgb(221, 218, 225);
 }
 
 .page-header img {
