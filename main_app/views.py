@@ -31,7 +31,7 @@ def signup(request):
   return render(request, 'signup.html', context)
 
 def show_index(request):
-  shows = Show.objects.all()
+  shows = Show.objects.filter(user=request.user)
   return render(request, 'shows/index.html', { 'shows': shows })
 
 def show_detail(request, show_id):
