@@ -82,6 +82,7 @@
 .show-details h1 {
   font-size: var(--font-xxl);
   margin: 15px 0 3px;
+  text-shadow: #e9e8ea 0 0 15px;
 }
 
 .show-details h2 {
@@ -89,11 +90,13 @@
   margin: 0 0 10px;
   margin-top: 0;
   margin-bottom: 10px;
+  text-shadow: #e9e8ea 0 0 10px;
 }
 
 .show-details h3 {
   margin: 20px 0 10px;
   font-size: var(--font-l);
+  text-shadow: #e9e8ea 0 0 10px;
 }
 
 .show-details p {
