@@ -4,7 +4,7 @@
 
 _My TV Collection_ was inspired by my partner and I's love of television, and the joy that comes from watching TV together. We love experiencing new shows together and sharing our favorite shows with each other. That said, our list of Shows to Watch has only grown over time, and with our penchant for watching multiple shows at once, it can be hard to keep track of the last episode we saw for each different show. Enter _My TV Collection_!
 
-![Placeholder for Screenshot of Landing page](/main_app/static/images/placeholder-landing-page.png)
+![Placeholder for Screenshot of Landing page](/main_app/static/images/landing-page.png)
 
 _My TV Collection_ is very simple - you can add TV shows to a Shows list, view details about each show, and log episodes you've watched for each show. There are quite a few exciting ice box features in the works for _My TV Collection_, so stay tuned!
 
