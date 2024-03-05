@@ -8,7 +8,7 @@ _My TV Collection_ was inspired by my partner and I's love of television, and th
 
 _My TV Collection_ is very simple - you can add TV shows to a Shows list, view details about each show, and log episodes you've watched for each show. There are quite a few exciting ice box features in the works for _My TV Collection_, so stay tuned!
 
-## Want some television recommendations? [Check Out My TV Collection Here](link "deplyment link placeholder") 📺
+## Want some television recommendations? [Check Out My TV Collection Here](https://nn-tv-collection.fly.dev/ "My TV Collection Deployment Link") 📺
 
 <!--! add additional app screenshot? -->
 
