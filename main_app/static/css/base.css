@@ -90,7 +90,7 @@ nav a {
   text-decoration: none;
   color: var(--text-color);
   font-weight: 600;
-  font-size: 16px;
+  font-size: var(--font-l);
 }
 
 nav a:hover {
@@ -267,6 +267,7 @@ nav li {
 
   nav {
     margin-left: auto;
+    height: 70px;
   }
 
   .header-logo-container {
