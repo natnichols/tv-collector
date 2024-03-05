@@ -14,6 +14,9 @@ class Show(models.Model):
   
   def get_absolute_url(self):
     return reverse('show-detail', kwargs={'show_id': self.id})
+  
+  class Meta:
+    ordering = ['name']
 
 class Episode(models.Model):
   name = models.CharField(max_length=100)
