@@ -41,7 +41,7 @@ _My TV Collection_ is very simple - you can add TV shows to a Shows list, view d
 ### [View my Planning Materials on Trello](https://trello.com/b/CnJxzhxd/my-tv-collection "My TV Collection Trello Board") 🎞️📋
 
 ## Ice Box 🧊
-- [ ] Dark Mode
+- [ ] Light Mode/Dark Mode Toggle
 - [ ] Add Movies Model to track movies watched
 - [ ] Add Episode Detail template to show additional episode details
   - [ ] Add air_date and description fields to Episode Model
