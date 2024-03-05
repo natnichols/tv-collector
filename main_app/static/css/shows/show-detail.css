@@ -7,6 +7,9 @@
   background-color: rgb(221, 218, 225, .5);
   width: 100%;
   margin-top: 50px;
+  border: var(--borders);
+  box-shadow: var(--card-box-shadow);
+  border-radius: var(--card-border-radius);
 }
 
 .show-img {
