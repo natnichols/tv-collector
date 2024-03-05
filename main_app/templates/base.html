@@ -30,9 +30,15 @@
       </a>
       <nav>
         <ul>
-          <li><a href="{% url 'show-index' %}">All Shows 🍿</a></li>
-          <li><a href="{% url 'show-create' %}">Add a Show 🎞️</a></li>
-          <li><a href="{% url 'about' %}">About 📺</a></li>
+          {% if user.is_authenticated %}
+            <li><a href="{% url 'show-index' %}">All Shows 🍿</a></li>
+            <li><a href="{% url 'show-create' %}">Add a Show 🎞️</a></li>
+            <li><a href="{% url 'about' %}">About 📺</a></li>
+            <li><a href="{% url 'logout' %}">Log out 👋</a></li>
+          {% else %}
+            <li><a href="{% url 'about' %}">About 📺</a></li>
+            <li><a href="{% url 'login' %}">Login</a></li>
+          {% endif %}
         </ul>
       </nav>
     </header>
