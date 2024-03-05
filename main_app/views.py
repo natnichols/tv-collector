@@ -3,6 +3,7 @@ from django.shortcuts import render, redirect
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.decorators import login_required
 from django.contrib.auth.views import LoginView
 from .models import Show, Photo
 from .forms import EpisodeForm
@@ -30,6 +31,7 @@ def signup(request):
   context = {'form': form, 'error_message': error_message}
   return render(request, 'signup.html', context)
 
+@login_required
 def show_index(request):
   shows = Show.objects.filter(user=request.user)
   return render(request, 'shows/index.html', { 'shows': shows })
