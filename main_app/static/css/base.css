@@ -53,7 +53,7 @@ body {
 
 header {
   width: 100%;
-  background: var(--nav-bg-ff); /* rgba(104, 197, 248, .9) */
+  background: var(--nav-bg-ff);
   border-bottom: var(--borders);
 }
 
@@ -61,6 +61,7 @@ header a {
   text-decoration: none;
   color: var(--text-color);
   font-weight: 600;
+  text-shadow: #e9e8ea 0 0 15px;
 }
 
 header a:hover {
@@ -91,6 +92,7 @@ nav a {
   color: var(--text-color);
   font-weight: 600;
   font-size: var(--font-l);
+  text-shadow: #e9e8ea 0 0 15px;
 }
 
 nav a:hover {
