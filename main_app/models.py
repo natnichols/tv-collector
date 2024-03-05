@@ -1,6 +1,7 @@
 # imports
 from django.db import models
 from django.urls import reverse
+from django.contrib.auth.models import User
 
 # models
 class Show(models.Model):
@@ -8,6 +9,7 @@ class Show(models.Model):
   release_year = models.IntegerField()
   streamer = models.CharField(max_length=100)
   description = models.TextField(max_length=250)
+  user = models.ForeignKey(User, on_delete=models.CASCADE)
 
   def __str__(self):
     return self.name
@@ -38,5 +40,4 @@ class Photo(models.Model):
   show = models.OneToOneField(Show, on_delete=models.CASCADE)
 
   def __str__(self):
-      return f"Photo for show_id: {self.show_id} @{self.url}"
-  
+    return f"Photo for show_id: {self.show_id} @{self.url}"
