@@ -56,7 +56,11 @@ class Home(LoginView):
 
 class ShowCreate(CreateView):
   model = Show
-  fields = '__all__'
+  fields = ['name', 'release_year', 'streamer', 'description']
+  
+  def form_valid(self, form):
+    form.instance.user = self.request.user
+    return super().form_valid(form)
 
 class ShowUpdate(UpdateView):
   model = Show
