@@ -56,6 +56,16 @@ header {
   border-bottom: var(--borders);
 }
 
+header a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+header a:hover {
+  color: var(--link-hover-color)
+}
+
 nav {
   margin: 10px;
 }

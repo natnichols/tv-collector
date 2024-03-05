@@ -19,15 +19,15 @@
 <body>
   <div style="background-image: url({% static 'images/tv-snow.jpg' %})">
     <header>
-      <div class="header-logo-container">
-        <a href="{% url 'home' %}">
+      <a href="{% url 'home' %}">
+        <div class="header-logo-container">
           <img 
             src="{% static 'images/retro-tv-favi.png' %}"
             alt="Temp My TV Collection Logo"
           >
-        </a>
-        <h1>My TV Collection</h1>
-      </div>
+          <h1>My TV Collection</h1>
+        </div>
+      </a>
       <nav>
         <ul>
           <li><a href="{% url 'show-index' %}">All Shows 🍿</a></li>
