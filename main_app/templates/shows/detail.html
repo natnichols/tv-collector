@@ -38,8 +38,7 @@
   </div>
   <div class="show-details">
     <h1>{{ show.name }}</h1>
-    <h2>{{ show.release_year }}</h2>
-    <h2>{{ show.streamer }}</h2>
+    <h2>{{ show.release_year }} - {{ show.streamer }}</h2>
     <p>{{ show.description }}</p>
     <div class="show-actions">
       <a href="{% url 'show-update' show.id %}" class="btn warn">Edit</a>
