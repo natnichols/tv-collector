@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   background-color: rgb(221, 218, 225, .75);
-  width: 100%;
+  width: 75%;
   margin-top: 50px;
   border: var(--borders);
   box-shadow: var(--card-box-shadow);
