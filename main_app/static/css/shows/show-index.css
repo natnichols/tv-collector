@@ -20,6 +20,7 @@
 
 .usr-img {
   width: 100%;
+  height: 50%;
   border-radius: var(--card-border-radius);
 }
 
@@ -31,6 +32,11 @@
 .card h2 {
   margin: 10px 0;
   font-size: var(--font-xl);
+}
+
+.card h3 {
+  margin: 5px 0;
+  font-size: var(--font-l);
 }
 
 .card p {
