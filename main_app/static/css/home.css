@@ -48,6 +48,10 @@ main > section {
   align-items: center;
   width: 80%;
   background-color: rgb(221, 218, 225, .75);
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--card-box-shadow);
+  border: var(--borders);
+  padding: 20px;
 }
 
 .login h1 {
