@@ -172,13 +172,13 @@ nav li {
   font-size: var(--font-xxl);
   margin: 0;
   color: rgb(221, 218, 225);
-  text-shadow: #d5d3d3 1px 0 10px;
+  text-shadow: rgb(151, 79, 251, .75) 1px 0 10px;
 }
 
 .page-header img {
   height: 40px;
   margin-left:15px;
-  filter: drop-shadow(0 0 .75rem #d5d3d3);
+  filter: drop-shadow(0 0 .75rem rgb(151, 79, 251, .75));
 }
 
 .page-header img:first-of-type {
