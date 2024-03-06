@@ -22,7 +22,7 @@ main > section {
 
 .logo-container {
   max-width: 375px;
-  text-shadow: #d5d3d3 1px 0 15px;
+  text-shadow: rgb(151, 79, 251, .75) 1px 0 15px;
 }
 
 .logo-container h2 {
@@ -36,9 +36,9 @@ main > section {
 }
 
 .tv-container img {
-  height: 100%;
-  width: 100%;
-  filter: drop-shadow(0 0 1rem #d5d3d3);
+  height: 50%;
+  width: 50%;
+  filter: drop-shadow(0 0 1rem rgb(151, 79, 251, .75));
 }
 
 .login {
