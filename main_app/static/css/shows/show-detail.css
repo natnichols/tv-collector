@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgb(221, 218, 225, .90);
+  background-color: rgb(221, 218, 225, .95);
   width: 75%;
   margin-top: 50px;
   border: var(--borders);
