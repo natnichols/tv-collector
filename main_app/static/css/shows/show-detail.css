@@ -1,3 +1,7 @@
+.show-episodes-container {
+  display: flex;
+}
+
 .show-container {
   padding: 35px 30px;
   display: flex;
@@ -6,7 +10,7 @@
   justify-content: center;
   background-color: var(--card-bg-color);
   width: 75%;
-  margin-top: 50px;
+  margin-top: 30px;
   border: var(--borders);
   box-shadow: var(--card-box-shadow);
   border-radius: var(--card-border-radius);

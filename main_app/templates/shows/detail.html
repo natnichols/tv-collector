@@ -21,85 +21,87 @@
 
 {% block content %}
 
-<section class="show-container">
-  <div class="show-img">
-    {% if show.photo.url %}
-      <img 
-        src="{{ show.photo.url }}" 
-        alt="A photo from {{ show.name }}"
-        class="usr-img"
-      >
-    {% else %}
-      <img 
-        src="{% static 'images/astro-tv.svg' %}" 
-        alt="An astronaut coming out of a TV"
-      >
-    {% endif %}
-  </div>
-  <div class="show-details">
-    <h1>{{ show.name }}</h1>
-    <h2>{{ show.release_year }} - {{ show.streamer }}</h2>
-    <p>{{ show.description }}</p>
-    <div class="show-actions">
-      <a href="{% url 'show-update' show.id %}" class="btn warn">Edit</a>
-      <a href="{% url 'show-delete' show.id %}" class="btn danger">Delete</a>
+<div class="show-episodes-container">
+  <section class="show-container">
+    <div class="show-img">
+      {% if show.photo.url %}
+        <img 
+          src="{{ show.photo.url }}" 
+          alt="A photo from {{ show.name }}"
+          class="usr-img"
+        >
+      {% else %}
+        <img 
+          src="{% static 'images/astro-tv.svg' %}" 
+          alt="An astronaut coming out of a TV"
+        >
+      {% endif %}
     </div>
-    <h3>Change Photo for {{ show.name }}</h3>
-    <p class="file-name"></p>
-    <form 
-      action="{% url 'add-photo' show.id %}"
-      enctype="multipart/form-data" 
-      method="POST"
-    >
-      {% csrf_token %}
-      <label class="btn secondary">
-        Choose Photo
-        <input type="file" name="photo-file" id="file-input">
-      </label>
-      <button type="submit" class="btn submit">Upload Photo</button>
-    </form>
-  </div>
-</section>
-<div class="episodes-container">
-  <section class="episodes">
-    <div class="subsection-title">
-      <h2>Episodes</h2>
-      <img src="{% static 'images/remote-control.png' %}" alt="A remote control" />
-      <img src="{% static 'images/pastel-tv.png' %}" alt="A TV" />
-      <img src="{% static 'images/video-playlist.png' %}" alt="A stack of video icons" />
-    </div>
-    <h3>Add an Episode 📼</h3>
-    <form 
-      action="{% url 'add-episode' show.id %}"
-      method="post"
-      class="subsection-content"
-      autocomplete="off"
-    >
-      {% csrf_token %}
-      {{ episode_form.as_p }}
-      <button type="submit" class="btn submit">Add Episode</button>
-    </form>
-    <h3>Watched Episodes</h3>
-    {% if show.episode_set.all.count %}
-      <table>
-        <thead>
-          <tr><th>Watch Date</th><th>Episode</th></tr>
-        </thead>
-        <tbody>
-          {% for episode in show.episode_set.all %}
-            <tr>
-              <td>{{ episode.date }}</td>
-              <td>S{{ episode.season }}.E{{ episode.episode_num }} - "{{ episode.name }}"</td>
-            </tr>
-          {% endfor %}
-        </tbody>
-      </table>
-    {% else %}
-      <div class="subsection-content">
-        <p>You haven't watched any episodes of {{ show.name }} yet!</p>
+    <div class="show-details">
+      <h1>{{ show.name }}</h1>
+      <h2>{{ show.release_year }} - {{ show.streamer }}</h2>
+      <p>{{ show.description }}</p>
+      <div class="show-actions">
+        <a href="{% url 'show-update' show.id %}" class="btn warn">Edit</a>
+        <a href="{% url 'show-delete' show.id %}" class="btn danger">Delete</a>
       </div>
-    {% endif %}
+      <h3>Change Photo for {{ show.name }}</h3>
+      <p class="file-name"></p>
+      <form 
+        action="{% url 'add-photo' show.id %}"
+        enctype="multipart/form-data" 
+        method="POST"
+      >
+        {% csrf_token %}
+        <label class="btn secondary">
+          Choose Photo
+          <input type="file" name="photo-file" id="file-input">
+        </label>
+        <button type="submit" class="btn submit">Upload Photo</button>
+      </form>
+    </div>
   </section>
+  <div class="episodes-container">
+    <section class="episodes">
+      <div class="subsection-title">
+        <h2>Episodes</h2>
+        <img src="{% static 'images/remote-control.png' %}" alt="A remote control" />
+        <img src="{% static 'images/pastel-tv.png' %}" alt="A TV" />
+        <img src="{% static 'images/video-playlist.png' %}" alt="A stack of video icons" />
+      </div>
+      <h3>Add an Episode 📼</h3>
+      <form 
+        action="{% url 'add-episode' show.id %}"
+        method="post"
+        class="subsection-content"
+        autocomplete="off"
+      >
+        {% csrf_token %}
+        {{ episode_form.as_p }}
+        <button type="submit" class="btn submit">Add Episode</button>
+      </form>
+      <h3>Watched Episodes</h3>
+      {% if show.episode_set.all.count %}
+        <table>
+          <thead>
+            <tr><th>Watch Date</th><th>Episode</th></tr>
+          </thead>
+          <tbody>
+            {% for episode in show.episode_set.all %}
+              <tr>
+                <td>{{ episode.date }}</td>
+                <td>S{{ episode.season }}.E{{ episode.episode_num }} - "{{ episode.name }}"</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      {% else %}
+        <div class="subsection-content">
+          <p>You haven't watched any episodes of {{ show.name }} yet!</p>
+        </div>
+      {% endif %}
+    </section>
+  </div>
 </div>
 
 {% endblock %}
