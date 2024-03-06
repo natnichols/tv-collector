@@ -48,12 +48,6 @@
   margin: 0 8px;
 }
 
-.toy-container {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
 .color-block {
   opacity: 0.8;
   height: 25px;
@@ -62,20 +56,16 @@
 }
 
 .unfed,
-.fed,
-.no-toys,
-.all-toys {
+.fed {
   margin: 0;
   font-weight: bold;
 }
 
-.unfed,
-.no-toys {
+.unfed {
   color: var(--danger);
 }
 
-.fed,
-.all-toys {
+.fed {
   color: var(--submit);
 }
 
@@ -127,14 +117,12 @@
   margin-left: 16px;
 }
 
-.episodes h2,
-.toys h2 {
+.episodes h2 {
   font-size: 3.2rem;
   margin: 0;
 }
 
-.episodes h3,
-.toys h3 {
+.episodes h3 {
   font-size: var(--font-xl);
   margin: 10px 0;
 }
@@ -171,20 +159,6 @@
 
 .episodes tr:nth-child(even) {
   background-color: #f3f3fd;
-}
-
-.toy-container p {
-  margin: 12px 0;
-}
-
-.toy-container a {
-  text-decoration: none;
-  color: #111;
-}
-
-.toy-container .btn {
-  padding: 3px 10px;
-  margin-left: 10px;
 }
 
 #file-input {
