@@ -48,7 +48,7 @@ body {
   --font-l: 1.8rem;
   --font-reg: 1.6rem;
   --card-border-radius: 6px;
-  --card-bg-color: rgb(221, 218, 225);
+  --card-bg-color: rgb(221, 218, 225, .95);
 }
 
 header {
