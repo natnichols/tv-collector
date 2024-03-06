@@ -105,8 +105,8 @@
 }
 
 .episodes-container > section {
-  width: 80%;
-  min-width: 360px;
+  width: 100%;
+  /* min-width: 500px; */
   border: var(--borders);
   border-radius: var(--card-border-radius);
   padding: 10px;
@@ -218,9 +218,9 @@
     align-items: flex-start;
   }
 
-  .episodes-container > section {
-    width: 45%;
-  }
+  /* .episodes-container > section {
+    width: 50%;
+  } */
 }
 
 @media only screen and (min-width: 1024px) {
