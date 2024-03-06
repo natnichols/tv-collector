@@ -122,6 +122,8 @@ nav li {
   margin: auto;
   padding: 10px 20px 0;
   max-width: 500px;
+  display: flex;
+  justify-content: center;
 }
 
 .page-header {
