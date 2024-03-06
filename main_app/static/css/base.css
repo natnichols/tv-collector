@@ -36,11 +36,11 @@ body {
   --text-color: rgb(18, 3, 39);
   --link-hover-color: rgb(246, 243, 251);
   --button-bg: rgb(18, 3, 39);
-  --button-bg-hover: rgb(226, 226, 226);
+  --button-bg-hover: rgb(42, 17, 78);
   --submit: rgb(65, 200, 31);
   --warn: rgb(255, 134, 53);
   --danger: rgb(245, 99, 106);
-  --secondary: rgb(173, 170, 175);
+  --secondary: rgb(185, 139, 250);
   --card-box-shadow: 5px 5px 6px -1px rgb(151, 79, 251, .75);
   --font-xtreme: 4.2rem;
   --font-xxl: 3.6rem;
