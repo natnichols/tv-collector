@@ -35,12 +35,12 @@ body {
   --borders: rgb(97, 37, 180) solid 2px;
   --text-color: rgb(18, 3, 39);
   --link-hover-color: rgb(246, 243, 251);
-  --button-bg: rgb(245, 245, 245);
+  --button-bg: rgb(18, 3, 39);
   --button-bg-hover: rgb(226, 226, 226);
-  --submit: rgb(26, 128, 0);
-  --warn: rgb(255, 102, 0);
-  --danger: rgb(220, 20, 30);
-  --secondary: rgb(57, 57, 57);
+  --submit: rgb(65, 200, 31);
+  --warn: rgb(255, 134, 53);
+  --danger: rgb(245, 99, 106);
+  --secondary: rgb(173, 170, 175);
   --card-box-shadow: 5px 5px 6px -1px rgb(151, 79, 251, .75);
   --font-xtreme: 4.2rem;
   --font-xxl: 3.6rem;
