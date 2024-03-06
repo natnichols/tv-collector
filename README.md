@@ -14,7 +14,7 @@ _My TV Collection_ is very simple - you can add TV shows to a Shows list, view d
 
 ## Attributions 🎉
 * Favicon, Logo, and Icons sourced from [Icons8](https://icons8.com/icon/VFsRvkbzMrQA/tv "Icons8")
-* Placeholder Show image sourced from [Freepik.com](https://www.freepik.com/free-vector/cute-astronaut-out-tv-space-cartoon-vector-icon-illustration-science-technology-icon-isolated_31416665.htm#fromView=search&page=1&position=27&uuid=0cfa2f33-154b-4f23-b321-6ea6c30c99a6 "Image by catalyststuff on Freepik")
+* Default Show image sourced from [Freepik.com](https://www.freepik.com/free-vector/cute-astronaut-out-tv-space-cartoon-vector-icon-illustration-science-technology-icon-isolated_31416665.htm#fromView=search&page=1&position=27&uuid=0cfa2f33-154b-4f23-b321-6ea6c30c99a6 "Image by catalyststuff on Freepik")
 * Background image sourced from [Freepik.com](https://www.freepik.com/free-vector/realistic-vhs-effect-background_36860829.htm#query=tv%20static&position=17&from_view=keyword&track=ais&uuid=91994610-f070-4100-9b8b-e7e4850a6962 "Image by Freepik")
 * Javascript datepicker sourced from [MCDatepicker](https://mcdatepicker.netlify.app/ "MCDatepicker")
 * Font sourced from [Google Fonts](https://fonts.google.com/specimen/DotGothic16 "Google Fonts")
