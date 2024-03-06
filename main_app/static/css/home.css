@@ -22,7 +22,7 @@ main > section {
 
 .logo-container {
   max-width: 375px;
-  text-shadow: rgb(151, 79, 251, .75) 1px 0 15px;
+  text-shadow: rgb(151, 79, 251, .95) 1px 0 15px;
 }
 
 .logo-container h2 {
