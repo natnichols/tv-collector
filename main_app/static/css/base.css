@@ -31,7 +31,7 @@ body {
     'Helvetica Neue', sans-serif;
   min-height: 100vh;
   --nav-bg: rgba(151, 79, 251, 0.7);
-  --nav-bg-ff: rgba(151, 79, 251, 0.9);
+  --nav-bg-ff: rgba(151, 79, 251, 0.75);
   --borders: rgb(97, 37, 180) solid 2px;
   --text-color: rgb(18, 3, 39);
   --link-hover-color: rgb(246, 243, 251);
