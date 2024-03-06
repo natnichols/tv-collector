@@ -173,8 +173,9 @@ nav li {
 .page-header h1 {
   font-size: var(--font-xxl);
   margin: 0;
-  color: rgb(221, 218, 225);
-  text-shadow: rgb(151, 79, 251, .95) 1px 0 10px;
+  color: rgb(242, 239, 247);
+  /* text-shadow: rgb(90, 30, 173) 1px 1px 15px; */
+  text-shadow: 1px 1px 2px rgb(90, 30, 173), 0 0 1em rgb(90, 30, 173), 0 0 0.2em rgb(90, 30, 173);
 }
 
 .page-header img {
