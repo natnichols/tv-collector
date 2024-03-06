@@ -190,10 +190,12 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
+    width: 75%;
+
   }
 
   /* .episodes-container > section {
-    width: 50%;
+    width: 75%;
   } */
 }
 
