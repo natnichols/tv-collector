@@ -18,7 +18,6 @@ html {
 }
 
 body {
-  /* background-image: url('/main_app/static/images/tv-snow.jpg'); */
   background-size: auto;
   background-position: center;
   background-color: black;
@@ -27,8 +26,6 @@ body {
   flex-direction: column;
   align-items: center;
   font-family: "DotGothic16", sans-serif;
-  /* font-weight: 400;
-  font-style: normal; */
   min-height: 100vh;
   --nav-bg: rgba(151, 79, 251, 0.7);
   --nav-bg-ff: rgba(151, 79, 251, 0.75);
@@ -174,7 +171,6 @@ nav li {
   font-size: var(--font-xxl);
   margin: 0;
   color: rgb(242, 239, 247);
-  /* text-shadow: rgb(90, 30, 173) 1px 1px 15px; */
   text-shadow: 1px 1px 2px rgb(90, 30, 173), 0 0 1em rgb(90, 30, 173), 0 0 0.2em rgb(90, 30, 173);
 }
 
@@ -209,7 +205,6 @@ nav li {
   }
 
   main {
-    /* max-width: 1300px; */
     min-height: calc(100vh - 53px);
   }
 
@@ -269,7 +264,6 @@ nav li {
   header {
     margin: 20px 20px 0 20px;
     width: calc(100vw - 40px);
-    /* max-width: 1920px; */
     top: 20px;
     background-color: transparent;
     border-bottom: none;
