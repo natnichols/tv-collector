@@ -4,7 +4,7 @@
 
 ![Screenshot of Landing page](/main_app/static/images/landing-page.jpg)
 
-_My TV Collection_ was inspired by my partner and I's love of television, and the joy that comes from watching TV together. We love experiencing new shows together and sharing our favorite shows with each other. That said, our list of Shows to Watch has only grown over time, and with our penchant for watching multiple shows at once, it can be hard to keep track of the last episode we saw for each different show. Enter _My TV Collection_!
+### _My TV Collection_ was inspired by my partner and I's love of television, and the joy that comes from watching TV together. We love experiencing new shows together and sharing our favorite shows with each other. That said, our list of Shows to Watch has only grown over time, and with our penchant for watching multiple shows at once, it can be hard to keep track of the last episode we saw for each different show. Enter _My TV Collection_!
 
 ![Screenshot of Show Detail page](/main_app/static/images/show-detail.jpg)
 
@@ -45,18 +45,21 @@ _My TV Collection_ is very simple - you can add TV shows to a Shows list, view d
 ### [View my Planning Materials on Trello](https://trello.com/b/CnJxzhxd/my-tv-collection "My TV Collection Trello Board") 🎞️📋
 
 ## Ice Box 🧊
-- [ ] Light Mode/Dark Mode Toggle
+- [ ] Implement Light Mode/Dark Mode Toggle
+- [ ] Implement mobile responsiveness for:
+  - [x] Tablets
+  - [ ] Smartphones
 - [ ] Add Movies Model to track movies watched
 - [ ] Add Episode Detail template to show additional episode details
   - [ ] Add air_date and description fields to Episode Model
-- [ ] Add pagination to details pages for:
+- [ ] Implement pagination to details pages for:
   - [ ] Shows
   - [ ] Episodes
   - [ ] Movies
-- [ ] Add reviews functionality for:
+- [ ] Implement reviews functionality for:
   - [ ] Shows
   - [ ] Episodes
   - [ ] Movies
-- [ ] Add search function
+- [ ] Implement search function
 - [ ] Incorporate Movie or TV Show APIs
   - [ ] Use my personal X Files API
