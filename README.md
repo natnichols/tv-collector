@@ -1,6 +1,6 @@
 # ![Favicon/Logo](/main_app/static/images/retro-tv-favi.png) My TV Collection 
 
-### _Can't remember which episode you left off at in that show? Now all you have to remember is the popcorn_ 🍿
+### _Can't remember where you left off in that show? Now all you have to remember is the popcorn!_ 🍿
 
 ![Screenshot of Landing page](/main_app/static/images/landing-page.jpg)
 
