@@ -45,7 +45,7 @@
         <a href="{% url 'show-update' show.id %}" class="btn warn">Edit</a>
         <a href="{% url 'show-delete' show.id %}" class="btn danger">Delete</a>
       </div>
-      <h3>Change Photo for {{ show.name }}</h3>
+      <h3>Change Photo for <i>{{ show.name }}</i></h3>
       <p class="file-name"></p>
       <form 
         action="{% url 'add-photo' show.id %}"
@@ -97,7 +97,7 @@
         </table>
       {% else %}
         <div class="subsection-content">
-          <p>You haven't watched any episodes of {{ show.name }} yet!</p>
+          <p>You haven't watched any episodes of <i>{{ show.name }}</i> yet!</p>
         </div>
       {% endif %}
     </section>
