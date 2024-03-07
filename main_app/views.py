@@ -6,7 +6,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.views import LoginView
-from .models import Show, Photo
+from .models import Show, Photo, Episode
 from .forms import EpisodeForm
 import uuid
 import boto3
@@ -45,14 +45,14 @@ def show_detail(request, show_id):
     'show': show, 'episode_form': episode_form
   })
 
-@login_required
-def add_episode(request, show_id):
-  form = EpisodeForm(request.POST)
-  if form.is_valid():
-    new_episode = form.save(commit=False)
-    new_episode.show_id = show_id
-    new_episode.save()
-  return redirect('show-detail', show_id=show_id)
+# @login_required
+# def add_episode(request, show_id):
+#   form = EpisodeForm(request.POST)
+#   if form.is_valid():
+#     new_episode = form.save(commit=False)
+#     new_episode.show_id = show_id
+#     new_episode.save()
+#   return redirect('show-detail', show_id=show_id)
 
 @login_required
 def add_photo(request, show_id):
@@ -89,4 +89,9 @@ class ShowUpdate(LoginRequiredMixin, UpdateView):
 
 class ShowDelete(LoginRequiredMixin, DeleteView):
   model = Show
+  success_url = '/shows/'
+
+class AddEpisode(LoginRequiredMixin, CreateView):
+  model = Episode
+  fields = '__all__'
   success_url = '/shows/'

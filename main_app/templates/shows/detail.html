@@ -70,7 +70,8 @@
         <img src="{% static 'images/video-playlist.png' %}" alt="A stack of video icons" />
       </div>
       <h3>Add an Episode 📼</h3>
-      <form 
+      <a href="{% url 'add-episode' show.id %}" class="btn submit">Add Episode</a>
+      {% comment %} <form 
         action="{% url 'add-episode' show.id %}"
         method="post"
         class="subsection-content"
@@ -78,8 +79,8 @@
       >
         {% csrf_token %}
         {{ episode_form.as_p }}
-        <button type="submit" class="btn submit">Add Episode</button>
-      </form>
+        <button type="" class="btn submit">Add Episode</button>
+      </form> {% endcomment %}
       <h3>Watched Episodes</h3>
       {% if show.episode_set.all.count %}
         <table>
