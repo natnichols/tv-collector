@@ -70,7 +70,7 @@
         <img src="{% static 'images/video-playlist.png' %}" alt="A stack of video icons" />
       </div>
       <h3>Add an Episode 📼</h3>
-      <a href="{% url 'add-episode' show.id %}" class="btn submit">Add Episode</a>
+      <a href="{% url 'add-episode' show.id %}"><button class="btn submit">Add Episode</button></a>
       {% comment %} <form 
         action="{% url 'add-episode' show.id %}"
         method="post"
