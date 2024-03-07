@@ -40,9 +40,9 @@ def show_index(request):
 @login_required
 def show_detail(request, show_id):
   show = Show.objects.get(id=show_id)
-  episode_form = EpisodeForm()
+  # episode_form = EpisodeForm()
   return render(request, 'shows/detail.html', {
-    'show': show, 'episode_form': episode_form
+    'show': show, #'episode_form': episode_form
   })
 
 # @login_required

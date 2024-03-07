@@ -33,7 +33,7 @@ class Episode(models.Model):
     return f"{self.name} (S{self.season}.E{self.episode_num}) watched on {self.date}"
   
   class Meta:
-    ordering = ['-date']
+    ordering = ['-date', '-episode_num']
 
 class Photo(models.Model):
   url = models.CharField(max_length=250)
