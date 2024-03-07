@@ -81,7 +81,6 @@
 
 .episodes-container > section {
   width: 100%;
-  /* min-width: 500px; */
   border: var(--borders);
   border-radius: var(--card-border-radius);
   padding: 15px;
@@ -89,7 +88,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* margin-bottom: 20px; */
   background-color: var(--card-bg-color);
 }
 
