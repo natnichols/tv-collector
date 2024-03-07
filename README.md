@@ -47,6 +47,10 @@ _My TV Collection_ is very simple - you can add TV shows to a Shows list, view d
 - [ ] Add Movies Model to track movies watched
 - [ ] Add Episode Detail template to show additional episode details
   - [ ] Add air_date and description fields to Episode Model
+- [ ] Add pagination to details pages for:
+  - [ ] Shows
+  - [ ] Episodes
+  - [ ] Movies
 - [ ] Add reviews functionality for:
   - [ ] Shows
   - [ ] Episodes
