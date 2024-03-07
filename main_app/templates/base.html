@@ -19,37 +19,35 @@
   {% block head %}
   {% endblock %}
 </head>
-<body>
-  <div style="background-image: url({% static 'images/tv-snow.jpg' %})" class="body-container">
-    <header>
-      <a href="{% url 'home' %}">
-        <div class="header-logo-container">
-          <img 
-            src="{% static 'images/retro-tv-favi.png' %}"
-            alt="Small retro television"
-          >
-          <h1>My TV Collection</h1>
-        </div>
-      </a>
-      <nav>
-        <ul>
-          {% if user.is_authenticated %}
-            <li><a href="{% url 'show-index' %}">All Shows 🍿</a></li>
-            <li><a href="{% url 'show-create' %}">Add a Show 🎞️</a></li>
-            <li><a href="{% url 'about' %}">About 📺</a></li>
-            <li><a href="{% url 'logout' %}">Log out 👋</a></li>
-          {% else %}
-            <li><a href="{% url 'home' %}">Login</a></li>
-            <li><a href="{% url 'signup' %}">Sign Up</a></li>
-            <li><a href="{% url 'about' %}">About 📺</a></li>
-          {% endif %}
-        </ul>
-      </nav>
-    </header>
-    <main>
-      {% block content %}
-      {% endblock %}
-    </main>
-  </div>
+<body style="background-image: url({% static 'images/tv-snow.jpg' %})" class="body-container">
+  <header>
+    <a href="{% url 'home' %}">
+      <div class="header-logo-container">
+        <img 
+          src="{% static 'images/retro-tv-favi.png' %}"
+          alt="Small retro television"
+        >
+        <h1>My TV Collection</h1>
+      </div>
+    </a>
+    <nav>
+      <ul>
+        {% if user.is_authenticated %}
+          <li><a href="{% url 'show-index' %}">All Shows 🍿</a></li>
+          <li><a href="{% url 'show-create' %}">Add a Show 🎞️</a></li>
+          <li><a href="{% url 'about' %}">About 📺</a></li>
+          <li><a href="{% url 'logout' %}">Log out 👋</a></li>
+        {% else %}
+          <li><a href="{% url 'home' %}">Login</a></li>
+          <li><a href="{% url 'signup' %}">Sign Up</a></li>
+          <li><a href="{% url 'about' %}">About 📺</a></li>
+        {% endif %}
+      </ul>
+    </nav>
+  </header>
+  <main>
+    {% block content %}
+    {% endblock %}
+  </main>
 </body>
 </html>
