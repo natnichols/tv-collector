@@ -156,6 +156,11 @@
   margin-bottom: 10px;
 }
 
+.photo-actions {
+  /* margin-top: 20px; */
+  display: flex;
+}
+
 @media only screen and (min-width: 768px) {
   .show-container {
     padding: 15px;

@@ -51,6 +51,7 @@
         action="{% url 'add-photo' show.id %}"
         enctype="multipart/form-data" 
         method="POST"
+        class="photo-actions"
       >
         {% csrf_token %}
         <label class="btn secondary">
