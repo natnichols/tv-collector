@@ -163,6 +163,12 @@
 
 #choose-photo-btn {
   text-align: center;
+  font-size: var(--font-reg);
+}
+
+#upload-photo-btn {
+  /* text-align: center; */
+  font-size: var(--font-reg);
 }
 
 @media only screen and (min-width: 768px) {
