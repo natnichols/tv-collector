@@ -157,7 +157,6 @@
 }
 
 .photo-actions {
-  /* margin-top: 20px; */
   display: flex;
 }
 
@@ -167,7 +166,6 @@
 }
 
 #upload-photo-btn {
-  /* text-align: center; */
   font-size: var(--font-reg);
 }
 
