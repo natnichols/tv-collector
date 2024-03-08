@@ -36,6 +36,7 @@ _My TV Collection_ is very simple - you can add TV shows to a Shows list, view d
 ![AWS](https://img.shields.io/badge/Amazon%20AWS-232F3E.svg?style=for-the-badge&logo=Amazon-AWS&logoColor=white)
 ![AWS IAM](https://img.shields.io/badge/Amazon%20Identity%20Access%20Management-DD344C.svg?style=for-the-badge&logo=Amazon-Identity-Access-Management&logoColor=white)
 ![AWS S3](https://img.shields.io/badge/Amazon%20S3-569A31.svg?style=for-the-badge&logo=Amazon-S3&logoColor=white)
+![MDN Web Docs](https://img.shields.io/badge/MDN_Web_Docs-black?style=for-the-badge&logo=mdnwebdocs&logoColor=white)
 ![Icons8](https://img.shields.io/badge/Icons8-1FB141.svg?style=for-the-badge&logo=Icons8&logoColor=white)
 ![Freepik](https://img.shields.io/badge/Freepik-1273EB.svg?style=for-the-badge&logo=Freepik&logoColor=white)
 ![Visual Studio Code](https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
