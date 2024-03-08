@@ -1,4 +1,5 @@
 # imports
+from django.forms import BaseModelForm
 from django.shortcuts import render, redirect
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.contrib.auth import login
@@ -95,3 +96,8 @@ class AddEpisode(LoginRequiredMixin, CreateView):
   model = Episode
   fields = '__all__'
   success_url = '/shows/'
+
+  def get_form(self, form_class=None):
+    form = super().get_form(form_class)
+    form.fields['show'].queryset = form.fields['show'].queryset.filter(user=self.request.user)
+    return form
